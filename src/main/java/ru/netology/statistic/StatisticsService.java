@@ -1,5 +1,7 @@
 package ru.netology.statistic;
 
+import org.jetbrains.annotations.NotNull;
+
 public class StatisticsService {
     /**
      * Calculate index of max income

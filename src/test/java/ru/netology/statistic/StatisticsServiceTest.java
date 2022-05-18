@@ -17,4 +17,16 @@ public class StatisticsServiceTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void findMaxAllCoverage() {
+        StatisticsService service = new StatisticsService();
+
+        long[] incomesInBillions = {1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6};
+        long expected = 6;
+
+        long actual = service.findMax(incomesInBillions);
+
+        assertEquals(expected, actual);
+    }
 }
